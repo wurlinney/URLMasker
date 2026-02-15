@@ -1,16 +1,8 @@
-package main
-
-import "fmt"
+package app
 
 const Prefix = "http://"
 
-func main() {
-	link := "Hello, its my page //string//: http://localhost123.com See you http://localhost123.com "
-	fmt.Println(doMaskForLink(link))
-
-}
-
-func doMaskForLink(s string) string {
+func DoMaskForLink(s string) string {
 	search := []byte(s)
 	prefix := []byte(Prefix)
 	prefixLength := len(prefix)

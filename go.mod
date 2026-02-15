@@ -1,3 +1,2 @@
-module linkMask
-
-go 1.25
+module urlmasker
+go 1.25.7

@@ -2,8 +2,8 @@ package app
 
 const Prefix = "http://"
 
-func DoMaskForLink(s string) string {
-	search := []byte(s)
+func (s *Service) DoMaskForLink(input string) string {
+	search := []byte(input)
 	prefix := []byte(Prefix)
 	prefixLength := len(prefix)
 	i := 0

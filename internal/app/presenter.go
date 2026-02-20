@@ -25,9 +25,9 @@ func (fpres *FilePresenter) Present(data []string) error {
 	return nil
 }
 
-func NewPresenter(filename string) *FilePresenter {
-	if filename != "" {
-		return &FilePresenter{Filename: filename}
+func NewPresenter(filename string) (*FilePresenter, error) {
+	if filename == "" {
+		return nil, fmt.Errorf("ошибка создания Presenter")
 	}
-	return nil
+	return &FilePresenter{Filename: filename}, nil
 }

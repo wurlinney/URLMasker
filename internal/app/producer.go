@@ -30,9 +30,9 @@ func (fprod *FileProducer) Produce() ([]string, error) {
 	return res, nil
 }
 
-func NewProducer(filename string) *FileProducer {
-	if filename != "" {
-		return &FileProducer{Filename: filename}
+func NewProducer(filename string) (*FileProducer, error) {
+	if filename == "" {
+		return nil, fmt.Errorf("ошибка создания Producer")
 	}
-	return nil
+	return &FileProducer{Filename: filename}, nil
 }

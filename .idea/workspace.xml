@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ecc92531-5799-4832-be8d-9a3b277ff523" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/urlmasker/masker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/app_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/urlmasker/app_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/presenter.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/presenter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/producer.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/producer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/urlmasker/app_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/urlmasker/masker_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +27,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -41,8 +46,10 @@
     "Go Build.go build main.go.executor": "Run",
     "Go Build.go build urlmasker.executor": "Run",
     "Go Build.go build urlmasker/cmd/app.executor": "Run",
+    "Go Test.TestServiceSuccess in urlmasker/internal/app.executor": "Run",
     "Go Test.go test URLMasker.executor": "Run",
     "Go Test.go test app.executor": "Run",
+    "Go Test.go test urlmasker.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
     "RunOnceActivity.GoLinterPluginStorageMigration": "true",
@@ -67,7 +74,7 @@
       <recent name="C:\Users\Alina\Desktop\URLMasker\cmd" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build urlmasker/cmd/app">
+  <component name="RunManager" selected="Go Test.go test app">
     <configuration name="go build urlmasker/cmd/app" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="URLMasker" />
       <working_directory value="$PROJECT_DIR$" />
@@ -75,6 +82,18 @@
       <package value="urlmasker" />
       <directory value="$PROJECT_DIR$/cmd/app" />
       <filePath value="$PROJECT_DIR$/cmd/app/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestServiceSuccess in urlmasker/internal/app" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="URLMasker" />
+      <working_directory value="$PROJECT_DIR$/internal/app" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="urlmasker/internal/app" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestServiceSuccess\E$" />
       <method v="2" />
     </configuration>
     <configuration name="go test app" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
@@ -87,12 +106,25 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
+    <configuration name="go test urlmasker" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
+      <module name="URLMasker" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <package value="urlmasker" />
+      <directory value="$PROJECT_DIR$/internal/urlmasker" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build urlmasker/cmd/app" />
+      <item itemvalue="Go Test.go test urlmasker" />
       <item itemvalue="Go Test.go test app" />
+      <item itemvalue="Go Test.TestServiceSuccess in urlmasker/internal/app" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestServiceSuccess in urlmasker/internal/app" />
         <item itemvalue="Go Build.go build urlmasker/cmd/app" />
       </list>
     </recent_temporary>

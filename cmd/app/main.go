@@ -1,14 +1,17 @@
 package main
 
 import (
-	"fmt"
+	"log"
 	"urlmasker/internal/app"
 )
 
 const Prefix = "http://"
 
 func main() {
-	link := "Hello, its my page //string//: http://localhost123.com See you http://localhost123.com "
-	fmt.Println(app.DoMaskForLink(link))
-
+	producer := app.NewProducer("input.txt")
+	presenter := app.NewPresenter("output.txt")
+	service := app.NewService(producer, presenter)
+	if err := service.Run(); err != nil {
+		log.Fatalf("Ошибка в работе сервиса: %v", err)
+	}
 }

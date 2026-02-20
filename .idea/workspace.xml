@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc92531-5799-4832-be8d-9a3b277ff523" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/app_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/app_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/urlmasker/masker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/app_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/urlmasker/app_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/service",
     "go.sdk.automatically.set": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Alina/Desktop/URLMasker",
@@ -60,11 +62,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alina\Desktop\URLMasker\internal\urlmasker" />
       <recent name="C:\Users\Alina\Desktop\URLMasker\cmd\app" />
       <recent name="C:\Users\Alina\Desktop\URLMasker\cmd" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.go test app">
+  <component name="RunManager" selected="Go Build.go build urlmasker/cmd/app">
     <configuration name="go build urlmasker/cmd/app" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="URLMasker" />
       <working_directory value="$PROJECT_DIR$" />

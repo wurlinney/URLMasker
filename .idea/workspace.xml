@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc92531-5799-4832-be8d-9a3b277ff523" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/cmd/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/presenter.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/presenter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/producer.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/producer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/urlmasker/masker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/app_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/urlmasker/app_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/app/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +62,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alina\Desktop\URLMasker\internal\urlmasker" />
       <recent name="C:\Users\Alina\Desktop\URLMasker\cmd\app" />
       <recent name="C:\Users\Alina\Desktop\URLMasker\cmd" />
     </key>

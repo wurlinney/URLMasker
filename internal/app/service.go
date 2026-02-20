@@ -2,6 +2,7 @@ package app
 
 import (
 	"fmt"
+	"urlmasker/internal/urlmasker"
 )
 
 type Producer interface {
@@ -18,6 +19,9 @@ type Service struct {
 }
 
 func (s *Service) Run() error {
+	if s.prod == nil || s.pres == nil {
+		return fmt.Errorf("ошибка при работе сервиса")
+	}
 	data, err := s.prod.Produce()
 	if err != nil {
 		return fmt.Errorf("ошибка при работе сервиса: %w", err)
@@ -34,11 +38,11 @@ func (s *Service) Run() error {
 	return nil
 }
 
-func (s *Service) MaskURLInService(input string) string {
-	return DoMaskForLink(input)
-}
-
 func NewService(prod Producer, pres Presenter) *Service {
 	return &Service{prod, pres}
 
+}
+
+func (s *Service) MaskURLInService(input string) string {
+	return urlmasker.DoMaskForLink(input)
 }

@@ -31,5 +31,8 @@ func (fprod *FileProducer) Produce() ([]string, error) {
 }
 
 func NewProducer(filename string) *FileProducer {
-	return &FileProducer{Filename: filename}
+	if filename != "" {
+		return &FileProducer{Filename: filename}
+	}
+	return nil
 }

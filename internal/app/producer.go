@@ -14,20 +14,22 @@ func (fprod *FileProducer) Produce() ([]string, error) {
 	var res []string
 	file, err := os.Open(fprod.Filename)
 	if err != nil {
-		return nil, fmt.Errorf("ошибка открытия файла: %v", err)
+		return nil, fmt.Errorf("ошибка открытия файла: %w", err)
 	}
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
 		line := scanner.Text()
-		if line != "" {
-			res = append(res, line)
-		}
+		res = append(res, line)
 	}
 
 	if err := scanner.Err(); err != nil {
-		return nil, fmt.Errorf("ошибка открытия файла: %v", err)
+		return nil, fmt.Errorf("ошибка открытия файла: %w", err)
 	}
 
 	return res, nil
+}
+
+func NewProducer(filename string) *FileProducer {
+	return &FileProducer{Filename: filename}
 }
